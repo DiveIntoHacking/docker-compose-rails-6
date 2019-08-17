@@ -1,11 +1,24 @@
-本プロジェクトは Ruby on Rails 6 の開発を行うために必要となるDockerコンテナの定義ファイルを収録したものです。
+# README
 
-Dockerの公式サイトの Rails 用のサンプル が載っている 下記URLのQuickstartにあるDockerfileやdocker-compose.ymlをベースに、Ruby やNode 等、Ruby on Rails 6 を実行する上で必要となる各種パッケージのインストールも行います
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-https://docs.docker.com/compose/rails/
+Things you may want to cover:
 
-以下のコマンドで即時にbuildが可能です。
+* Ruby version
 
-```bash
-$ docker-compose build --no-cache
-```
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
