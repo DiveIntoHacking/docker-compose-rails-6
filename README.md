@@ -5,6 +5,8 @@ This repository defines docker files(Dockerfile and docker-compose.yml) to creat
 ```
 $ git clone git@github.com:DiveIntoHacking/docker-compose-rails-6.git
 $ cd docker-compose-rails-6
+$ docker-compose run --rm web bundle install
+$ docker-compose run --rm web yarn install
 $ docker-compose up
 $ docker-compose exec web rake db:create
 ```
