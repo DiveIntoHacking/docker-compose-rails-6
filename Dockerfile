@@ -6,14 +6,13 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
   && apt-get update -qq && apt-get install -y nodejs postgresql-client \
   && apt-get install -y yarn \
   && apt-get install -y imagemagick \
-  && apt-get install -y libvips-tools \
-  && yarn install --check-files
+  && apt-get install -y libvips-tools
 
-RUN mkdir /app
-WORKDIR /app
-COPY Gemfile /app/Gemfile
-COPY Gemfile.lock /app/Gemfile.lock
-RUN bundle install
+ENV APP_PATH=/app
+RUN mkdir $APP_PATH
+WORKDIR $APP_PATH
+COPY Gemfile "${APP_PATH}/Gemfile"
+COPY Gemfile.lock "${APP_PATH}/Gemfile.lock"
 COPY . /app
 
 COPY entrypoint.sh /usr/bin/
