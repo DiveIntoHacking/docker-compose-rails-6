@@ -11,9 +11,9 @@ $ docker-compose exec web rake db:create
 
 You can see Rails top page on http://localhost:3000/.
 
-## build and push to Docker Hub
+## Build and push an image to Docker Hub
 
-This is just a note for admin to push a docker image on https://hub.docker.com/.
+This is just a note for admin (Ham) to push a docker image on https://hub.docker.com/.
 
 See [reference](https://cloud.docker.com/u/diveintohacking/repository/docker/diveintohacking/docker-compose-rails-6/tags).
 
