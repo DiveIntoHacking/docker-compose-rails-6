@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+docker-compose -f docker-compose.build.yml build --no-cache
+
+target_tag_image="diveintohacking/docker-compose-rails-6:${1}"
+
+docker tag docker-compose-rails-6_web:latest $target_tag_image
+
+docker push $target_tag_image
