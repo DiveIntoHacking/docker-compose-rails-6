@@ -13,6 +13,15 @@ $ docker-compose exec web rake db:create
 
 You can see Rails top page on http://localhost:3000/.
 
+
+## pry
+
+If you want to attach a docker process after you stop at a break point with pry, use the following command.
+
+```
+$ ./bin/docker-compose-attach web
+```
+
 ## Build and push an image to Docker Hub
 
 This is just a note for admin (Ham) to push a docker image on https://hub.docker.com/.
