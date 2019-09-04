@@ -28,6 +28,8 @@ This is just a note for admin (Ham) to push a docker image on https://hub.docker
 
 See [reference](https://cloud.docker.com/u/diveintohacking/repository/docker/diveintohacking/docker-compose-rails-6/tags).
 
+For instance, you can set like tag=0.0.4 in the following command.
+
 ```
 $ ./bin/build-and-push-image $tag
 ```
