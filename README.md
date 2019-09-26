@@ -8,7 +8,7 @@ $ cd docker-compose-rails-6
 $ docker-compose run --rm web bundle install
 $ docker-compose run --rm web yarn install
 $ docker-compose up
-$ docker-compose exec web rake db:create
+$ docker-compose exec web ./bin/rails db:create
 ```
 
 You can see Rails top page on http://localhost:3000/.
