@@ -104,7 +104,7 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-    puma (3.12.4)
+    puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-proxy (0.6.5)
