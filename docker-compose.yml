@@ -17,5 +17,6 @@ services:
       - db
     stdin_open: true
     tty: true
+
 volumes:
   postgresql_data:
